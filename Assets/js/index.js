@@ -23,7 +23,7 @@ var questZombi  = [{
     question: "What weapon is used to usually kill a boss in one hit?",
     choices: ["Magnum", "Rocket Launcher", "Knife"],
     correctAnswer: 2
-}{
+},{
     question: "Resident Evil is a series based on____.",
     choices: ["Demons", "Serial Killers", "Zombies"],
     correctAnswer: 3
@@ -64,7 +64,11 @@ var questZombi  = [{
 // Query selectors to pull from HTML
 var rE_question = document.querySelector(".question");
 var rE_info = document.querySelector(".credentials_info");
-var rE_start = document.querySelector(".load");
 var rE_doOver = document.querySelector(".restart");
 var rE_quit = document.querySelector(".die")
 var rE_box = document.querySelector(".quest_box");
+var rE_start = $("#lock_n_load");
+
+rE_start.on('click', function(){
+    alert("Survive the horde");
+});
