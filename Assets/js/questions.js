@@ -1,6 +1,6 @@
 // Quiz questions
 
-var questZombi  = [
+const questZombi  = [
     {
     question: "Where do most of the Resident Evil games takes place?",
     choices: {1: "Raccon City", 2: "Chernobyl", 3: "Midgar"},
